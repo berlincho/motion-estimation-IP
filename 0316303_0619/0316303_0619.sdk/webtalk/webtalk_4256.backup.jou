@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# 
+# Start of session at: Thu Jun 22 22:38:41 2017
+# Process ID: 4256
+# Current directory: C:/Users/shlab_89/Downloads/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Users/shlab_89/Downloads/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/webtalk/webtalk.log
+# Journal file: C:/Users/shlab_89/Downloads/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

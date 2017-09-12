@@ -1,0 +1,733 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Jun 21 12:27:06 2017
+# Process ID: 4176
+# Current directory: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4596 C:\Users\shlab_89\Desktop\0620_lab_BRAM\0316303_0619\0316303_0619.xpr
+# Log file: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/vivado.log
+# Journal file: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Berlin/Desktop/0620/0620_lab_BRAM/0316303_0619' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 817.762 ; gain = 139.152
+launch_sdk -workspace C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk -hwspec C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk -hwspec C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:me_match:1.0 [get_ips  lab6_me_match_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd'
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:user:me_match:1.0 - me_match_0
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <lab6> from BD file <C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd>
+INFO: [IP_Flow 19-1972] Upgraded lab6_me_match_0_0 from me_match_v1.0 1.0 to me_match_v1.0 1.0
+Wrote  : <C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 887.906 ; gain = 61.273
+export_ip_user_files -of_objects [get_ips lab6_me_match_0_0] -no_script -sync -force -quiet
+ipx::edit_ip_in_project -upgrade true -name me_match_v1_0_v1_0_project -directory C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.tmp/me_match_v1_0_v1_0_project c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/shlab_89/desktop/0620_lab_bram/0316303_0619/0316303_0619.tmp/me_match_v1_0_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 905.961 ; gain = 9.730
+set_property core_revision 17 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:me_match:1.0 [get_ips  lab6_me_match_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd'
+INFO: [IP_Flow 19-3422] Upgraded lab6_me_match_0_0 (me_match_v1.0 1.0) from revision 16 to revision 17
+Wrote  : <C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips lab6_me_match_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+Verilog Output written to : C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6.v
+Verilog Output written to : C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6_wrapper.v
+Wrote  : <C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block me_match_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hw_handoff/lab6.hwh
+Generated Block Design Tcl file C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hw_handoff/lab6_bd.tcl
+Generated Hardware Definition File C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP lab6_auto_pc_0, cache-ID = 83e7b606e4f79014; cache size = 498.664 MB.
+[Wed Jun 21 12:41:34 2017] Launched lab6_me_match_0_0_synth_1, synth_1...
+Run output will be captured here:
+lab6_me_match_0_0_synth_1: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/lab6_me_match_0_0_synth_1/runme.log
+synth_1: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/synth_1/runme.log
+[Wed Jun 21 12:41:34 2017] Launched impl_1...
+Run output will be captured here: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1044.258 ; gain = 58.695
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0'.
+report_ip_status -name ip_status
+reset_run impl_1
+upgrade_ip -vlnv xilinx.com:user:me_match:1.0 [get_ips  lab6_me_match_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd'
+INFO: [IP_Flow 19-1972] Upgraded lab6_me_match_0_0 from me_match_v1.0 1.0 to me_match_v1.0 1.0
+Wrote  : <C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips lab6_me_match_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+Verilog Output written to : C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6.v
+Verilog Output written to : C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6_wrapper.v
+Wrote  : <C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block me_match_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hw_handoff/lab6.hwh
+Generated Block Design Tcl file C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hw_handoff/lab6_bd.tcl
+Generated Hardware Definition File C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP lab6_auto_pc_0, cache-ID = 83e7b606e4f79014; cache size = 498.664 MB.
+[Wed Jun 21 12:46:31 2017] Launched lab6_me_match_0_0_synth_1, synth_1...
+Run output will be captured here:
+lab6_me_match_0_0_synth_1: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/lab6_me_match_0_0_synth_1/runme.log
+synth_1: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/synth_1/runme.log
+[Wed Jun 21 12:46:31 2017] Launched impl_1...
+Run output will be captured here: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/impl_1/runme.log
+report_ip_status -name ip_status 
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0'.
+report_ip_status -name ip_status
+ipx::edit_ip_in_project -upgrade true -name me_match_v1_0_v1_0_project -directory C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.tmp/me_match_v1_0_v1_0_project c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/shlab_89/desktop/0620_lab_bram/0316303_0619/0316303_0619.tmp/me_match_v1_0_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+set_property core_revision 18 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0'
+update_ip_catalog: Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 1294.746 ; gain = 208.398
+report_ip_status -name ip_status 
+report_ip_status: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1383.574 ; gain = 66.930
+upgrade_ip -vlnv xilinx.com:user:me_match:1.0 [get_ips  lab6_me_match_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd'
+INFO: [IP_Flow 19-3422] Upgraded lab6_me_match_0_0 (me_match_v1.0 1.0) from revision 17 to revision 18
+Wrote  : <C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 1593.375 ; gain = 208.098
+export_ip_user_files -of_objects [get_ips lab6_me_match_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+report_ip_status: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1665.566 ; gain = 54.707
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+create_bd_cell: Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 1983.082 ; gain = 259.305
+Verilog Output written to : C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6.v
+Verilog Output written to : C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6_wrapper.v
+Wrote  : <C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block me_match_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hw_handoff/lab6.hwh
+Generated Block Design Tcl file C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hw_handoff/lab6_bd.tcl
+Generated Hardware Definition File C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6.hwdef
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0'.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP lab6_auto_pc_0, cache-ID = 83e7b606e4f79014; cache size = 513.602 MB.
+[Wed Jun 21 13:02:13 2017] Launched lab6_me_match_0_0_synth_1, synth_1...
+Run output will be captured here:
+lab6_me_match_0_0_synth_1: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/lab6_me_match_0_0_synth_1/runme.log
+synth_1: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/synth_1/runme.log
+[Wed Jun 21 13:02:13 2017] Launched impl_1...
+Run output will be captured here: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:02:57 ; elapsed = 00:04:00 . Memory (MB): peak = 3676.840 ; gain = 2010.262
+report_ip_status -name ip_status 
+reset_run synth_1
+reset_run lab6_me_match_0_0_synth_1
+upgrade_ip -vlnv xilinx.com:user:me_match:1.0 [get_ips  lab6_me_match_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd'
+INFO: [IP_Flow 19-1972] Upgraded lab6_me_match_0_0 from me_match_v1.0 1.0 to me_match_v1.0 1.0
+Wrote  : <C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips lab6_me_match_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+Verilog Output written to : C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6.v
+Verilog Output written to : C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6_wrapper.v
+Wrote  : <C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block me_match_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hw_handoff/lab6.hwh
+Generated Block Design Tcl file C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hw_handoff/lab6_bd.tcl
+Generated Hardware Definition File C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP lab6_auto_pc_0, cache-ID = 83e7b606e4f79014; cache size = 513.602 MB.
+[Wed Jun 21 13:02:36 2017] Launched lab6_me_match_0_0_synth_1, synth_1...
+Run output will be captured here:
+lab6_me_match_0_0_synth_1: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/lab6_me_match_0_0_synth_1/runme.log
+synth_1: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/synth_1/runme.log
+[Wed Jun 21 13:02:36 2017] Launched impl_1...
+Run output will be captured here: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 3708.102 ; gain = 31.262
+report_ip_status -name ip_status 
+file copy -force C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/impl_1/lab6_wrapper.sysdef C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+
+launch_sdk -workspace C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk -hwspec C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk -hwspec C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0'.
+report_ip_status -name ip_status
+ipx::edit_ip_in_project -upgrade true -name me_match_v1_0_v1_0_project -directory C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.tmp/me_match_v1_0_v1_0_project c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/shlab_89/desktop/0620_lab_bram/0316303_0619/0316303_0619.tmp/me_match_v1_0_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+set_property core_revision 19 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:me_match:1.0 [get_ips  lab6_me_match_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd'
+INFO: [IP_Flow 19-3422] Upgraded lab6_me_match_0_0 (me_match_v1.0 1.0) from revision 18 to revision 19
+Wrote  : <C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips lab6_me_match_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+Verilog Output written to : C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6.v
+Verilog Output written to : C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6_wrapper.v
+Wrote  : <C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block me_match_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hw_handoff/lab6.hwh
+Generated Block Design Tcl file C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hw_handoff/lab6_bd.tcl
+Generated Hardware Definition File C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP lab6_auto_pc_0, cache-ID = 83e7b606e4f79014; cache size = 528.543 MB.
+[Wed Jun 21 13:25:44 2017] Launched lab6_me_match_0_0_synth_1, synth_1...
+Run output will be captured here:
+lab6_me_match_0_0_synth_1: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/lab6_me_match_0_0_synth_1/runme.log
+synth_1: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/synth_1/runme.log
+[Wed Jun 21 13:25:44 2017] Launched impl_1...
+Run output will be captured here: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3765.848 ; gain = 28.828
+report_ip_status -name ip_status 
+file copy -force C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/impl_1/lab6_wrapper.sysdef C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+
+launch_sdk -workspace C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk -hwspec C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk -hwspec C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0'.
+report_ip_status -name ip_status
+ipx::edit_ip_in_project -upgrade true -name me_match_v1_0_v1_0_project -directory C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.tmp/me_match_v1_0_v1_0_project c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/shlab_89/desktop/0620_lab_bram/0316303_0619/0316303_0619.tmp/me_match_v1_0_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+set_property core_revision 20 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:me_match:1.0 [get_ips  lab6_me_match_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd'
+INFO: [IP_Flow 19-3422] Upgraded lab6_me_match_0_0 (me_match_v1.0 1.0) from revision 19 to revision 20
+Wrote  : <C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips lab6_me_match_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+Verilog Output written to : C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6.v
+Verilog Output written to : C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6_wrapper.v
+Wrote  : <C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block me_match_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hw_handoff/lab6.hwh
+Generated Block Design Tcl file C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hw_handoff/lab6_bd.tcl
+Generated Hardware Definition File C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP lab6_auto_pc_0, cache-ID = 83e7b606e4f79014; cache size = 543.340 MB.
+[Wed Jun 21 14:12:49 2017] Launched lab6_me_match_0_0_synth_1, synth_1...
+Run output will be captured here:
+lab6_me_match_0_0_synth_1: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/lab6_me_match_0_0_synth_1/runme.log
+synth_1: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/synth_1/runme.log
+[Wed Jun 21 14:12:49 2017] Launched impl_1...
+Run output will be captured here: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 3801.813 ; gain = 35.965
+report_ip_status -name ip_status 
+file copy -force C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/impl_1/lab6_wrapper.sysdef C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+
+launch_sdk -workspace C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk -hwspec C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk -hwspec C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+ipx::edit_ip_in_project -upgrade true -name me_match_v1_0_v1_0_project -directory C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.tmp/me_match_v1_0_v1_0_project c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/shlab_89/desktop/0620_lab_bram/0316303_0619/0316303_0619.tmp/me_match_v1_0_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+set_property core_revision 21 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:me_match:1.0 [get_ips  lab6_me_match_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd'
+INFO: [IP_Flow 19-3422] Upgraded lab6_me_match_0_0 (me_match_v1.0 1.0) from revision 20 to revision 21
+Wrote  : <C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips lab6_me_match_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+Verilog Output written to : C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6.v
+Verilog Output written to : C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6_wrapper.v
+Wrote  : <C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block me_match_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hw_handoff/lab6.hwh
+Generated Block Design Tcl file C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hw_handoff/lab6_bd.tcl
+Generated Hardware Definition File C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP lab6_auto_pc_0, cache-ID = 83e7b606e4f79014; cache size = 543.340 MB.
+[Wed Jun 21 14:48:10 2017] Launched lab6_me_match_0_0_synth_1, synth_1...
+Run output will be captured here:
+lab6_me_match_0_0_synth_1: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/lab6_me_match_0_0_synth_1/runme.log
+synth_1: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/synth_1/runme.log
+[Wed Jun 21 14:48:10 2017] Launched impl_1...
+Run output will be captured here: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 3841.797 ; gain = 33.746
+report_ip_status -name ip_status 
+file copy -force C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/impl_1/lab6_wrapper.sysdef C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+
+launch_sdk -workspace C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk -hwspec C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk -hwspec C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0'.
+report_ip_status -name ip_status
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0'.
+report_ip_status -name ip_status
+ipx::edit_ip_in_project -upgrade true -name me_match_v1_0_v1_0_project -directory C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.tmp/me_match_v1_0_v1_0_project c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/shlab_89/desktop/0620_lab_bram/0316303_0619/0316303_0619.tmp/me_match_v1_0_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3841.797 ; gain = 0.000
+set_property core_revision 22 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0'
+update_ip_catalog: Time (s): cpu = 00:01:04 ; elapsed = 00:01:28 . Memory (MB): peak = 4250.535 ; gain = 408.738
+report_ip_status -name ip_status 
+report_ip_status: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 4328.309 ; gain = 67.730
+upgrade_ip -vlnv xilinx.com:user:me_match:1.0 [get_ips  lab6_me_match_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd'
+INFO: [IP_Flow 19-3422] Upgraded lab6_me_match_0_0 (me_match_v1.0 1.0) from revision 21 to revision 22
+Wrote  : <C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 4543.547 ; gain = 213.113
+export_ip_user_files -of_objects [get_ips lab6_me_match_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+report_ip_status: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 4615.805 ; gain = 60.027
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0'.
+report_ip_status -name ip_status
+ipx::edit_ip_in_project -upgrade true -name me_match_v1_0_v1_0_project -directory C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.tmp/me_match_v1_0_v1_0_project c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/shlab_89/desktop/0620_lab_bram/0316303_0619/0316303_0619.tmp/me_match_v1_0_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+set_property core_revision 23 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0'
+update_ip_catalog: Time (s): cpu = 00:00:49 ; elapsed = 00:01:04 . Memory (MB): peak = 5078.559 ; gain = 408.867
+report_ip_status -name ip_status 
+report_ip_status: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 5158.539 ; gain = 69.941
+upgrade_ip -vlnv xilinx.com:user:me_match:1.0 [get_ips  lab6_me_match_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd'
+INFO: [IP_Flow 19-3422] Upgraded lab6_me_match_0_0 (me_match_v1.0 1.0) from revision 22 to revision 23
+Wrote  : <C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 5379.309 ; gain = 214.539
+export_ip_user_files -of_objects [get_ips lab6_me_match_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+report_ip_status: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 5438.051 ; gain = 57.547
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:me_match:1.0 [get_ips  lab6_me_match_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd'
+INFO: [IP_Flow 19-1972] Upgraded lab6_me_match_0_0 from me_match_v1.0 1.0 to me_match_v1.0 1.0
+Wrote  : <C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips lab6_me_match_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+Verilog Output written to : C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6.v
+Verilog Output written to : C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6_wrapper.v
+Wrote  : <C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block me_match_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hw_handoff/lab6.hwh
+Generated Block Design Tcl file C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hw_handoff/lab6_bd.tcl
+Generated Hardware Definition File C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP lab6_auto_pc_0, cache-ID = 83e7b606e4f79014; cache size = 558.304 MB.
+[Wed Jun 21 15:41:19 2017] Launched lab6_me_match_0_0_synth_1, synth_1...
+Run output will be captured here:
+lab6_me_match_0_0_synth_1: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/lab6_me_match_0_0_synth_1/runme.log
+synth_1: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/synth_1/runme.log
+[Wed Jun 21 15:41:20 2017] Launched impl_1...
+Run output will be captured here: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 5523.570 ; gain = 47.344
+report_ip_status -name ip_status 
+file copy -force C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/impl_1/lab6_wrapper.sysdef C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+
+launch_sdk -workspace C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk -hwspec C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk -hwspec C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 1135 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-43] Netlist 'lab6_wrapper' is not ideal for floorplanning, since the cellview 'lab6_me_match_0_0_me_match_v1_0_S00_AXI' defined in file 'lab6_me_match_0_0.edf' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/.Xil/Vivado-4176-shlab_42-PC/dcp/lab6_wrapper_early.xdc]
+Finished Parsing XDC File [C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/.Xil/Vivado-4176-shlab_42-PC/dcp/lab6_wrapper_early.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 5895.289 ; gain = 14.539
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 5895.289 ; gain = 14.539
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:29 ; elapsed = 00:00:25 . Memory (MB): peak = 6016.086 ; gain = 379.543
+open_report: Time (s): cpu = 00:00:18 ; elapsed = 00:00:08 . Memory (MB): peak = 6054.027 ; gain = 37.941
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 6574.375 ; gain = 493.445
+open_bd_design {C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd}
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {100}] [get_bd_cells processing_system7_0]
+endgroup
+save_bd_design
+Wrote  : <C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd> 
+reset_run synth_1
+reset_run lab6_processing_system7_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Verilog Output written to : C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6.v
+Verilog Output written to : C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6_wrapper.v
+Wrote  : <C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd> 
+WARNING: [xilinx.com:ip:processing_system7:5.5-1] lab6_processing_system7_0_0: The Zynq BFM requires an AXI BFM license to run. Please ensure that you have purchased and setup the AXI BFM license prior to running simulation with this block. Please contact your Xilinx sales office for more information on purchasing this license
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block me_match_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hw_handoff/lab6.hwh
+Generated Block Design Tcl file C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hw_handoff/lab6_bd.tcl
+Generated Hardware Definition File C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP lab6_processing_system7_0_0, cache-ID = 05d347bd7cb614df; cache size = 573.533 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP lab6_me_match_0_0, cache-ID = 32ffd27276e5c50b; cache size = 573.533 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP lab6_rst_ps7_0_100M_0, cache-ID = 881f75d3b1bca62b; cache size = 573.533 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP lab6_auto_pc_0, cache-ID = 83e7b606e4f79014; cache size = 573.533 MB.
+[Wed Jun 21 15:58:02 2017] Launched synth_1...
+Run output will be captured here: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/synth_1/runme.log
+[Wed Jun 21 15:58:02 2017] Launched impl_1...
+Run output will be captured here: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:42 ; elapsed = 00:00:40 . Memory (MB): peak = 6643.855 ; gain = 50.031
+file copy -force C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/impl_1/lab6_wrapper.sysdef C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+
+launch_sdk -workspace C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk -hwspec C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk -hwspec C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+ipx::edit_ip_in_project -upgrade true -name me_match_v1_0_v1_0_project -directory C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.tmp/me_match_v1_0_v1_0_project c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/shlab_89/desktop/0620_lab_bram/0316303_0619/0316303_0619.tmp/me_match_v1_0_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+set_property core_revision 24 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:me_match:1.0 [get_ips  lab6_me_match_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd'
+INFO: [IP_Flow 19-3422] Upgraded lab6_me_match_0_0 (me_match_v1.0 1.0) from revision 23 to revision 24
+Wrote  : <C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips lab6_me_match_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+Verilog Output written to : C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6.v
+Verilog Output written to : C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6_wrapper.v
+Wrote  : <C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block me_match_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hw_handoff/lab6.hwh
+Generated Block Design Tcl file C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hw_handoff/lab6_bd.tcl
+Generated Hardware Definition File C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP lab6_auto_pc_0, cache-ID = 83e7b606e4f79014; cache size = 573.533 MB.
+[Wed Jun 21 16:30:17 2017] Launched lab6_me_match_0_0_synth_1, synth_1...
+Run output will be captured here:
+lab6_me_match_0_0_synth_1: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/lab6_me_match_0_0_synth_1/runme.log
+synth_1: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/synth_1/runme.log
+[Wed Jun 21 16:30:17 2017] Launched impl_1...
+Run output will be captured here: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 6696.496 ; gain = 45.484
+report_ip_status -name ip_status 
+file copy -force C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/impl_1/lab6_wrapper.sysdef C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+
+launch_sdk -workspace C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk -hwspec C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk -hwspec C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {110} CONFIG.PCW_QSPI_GRP_SINGLE_SS_ENABLE {1}] [get_bd_cells processing_system7_0]
+endgroup
+save_bd_design
+Wrote  : <C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+Verilog Output written to : C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6.v
+Verilog Output written to : C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6_wrapper.v
+Wrote  : <C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd> 
+WARNING: [xilinx.com:ip:processing_system7:5.5-1] lab6_processing_system7_0_0: The Zynq BFM requires an AXI BFM license to run. Please ensure that you have purchased and setup the AXI BFM license prior to running simulation with this block. Please contact your Xilinx sales office for more information on purchasing this license
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block me_match_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hw_handoff/lab6.hwh
+Generated Block Design Tcl file C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hw_handoff/lab6_bd.tcl
+Generated Hardware Definition File C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP lab6_processing_system7_0_0, cache-ID = 77085f7999a9c83c; cache size = 588.953 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP lab6_me_match_0_0, cache-ID = 721119cbdc567d82; cache size = 588.953 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP lab6_rst_ps7_0_100M_0, cache-ID = 881f75d3b1bca62b; cache size = 588.953 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP lab6_auto_pc_0, cache-ID = 83e7b606e4f79014; cache size = 588.953 MB.
+[Wed Jun 21 16:46:24 2017] Launched synth_1...
+Run output will be captured here: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/synth_1/runme.log
+[Wed Jun 21 16:46:24 2017] Launched impl_1...
+Run output will be captured here: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:46 ; elapsed = 00:00:44 . Memory (MB): peak = 6722.582 ; gain = 26.086
+report_ip_status -name ip_status 
+file copy -force C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/impl_1/lab6_wrapper.sysdef C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+
+launch_sdk -workspace C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk -hwspec C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk -hwspec C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+file copy -force C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/impl_1/lab6_wrapper.sysdef C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+
+launch_sdk -workspace C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk -hwspec C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk -hwspec C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0'.
+report_ip_status -name ip_status
+ipx::edit_ip_in_project -upgrade true -name me_match_v1_0_v1_0_project -directory C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.tmp/me_match_v1_0_v1_0_project c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/shlab_89/desktop/0620_lab_bram/0316303_0619/0316303_0619.tmp/me_match_v1_0_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 6724.441 ; gain = 0.000
+set_property core_revision 25 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:me_match:1.0 [get_ips  lab6_me_match_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd'
+INFO: [IP_Flow 19-3422] Upgraded lab6_me_match_0_0 (me_match_v1.0 1.0) from revision 24 to revision 25
+Wrote  : <C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips lab6_me_match_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+Verilog Output written to : C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6.v
+Verilog Output written to : C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6_wrapper.v
+Wrote  : <C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block me_match_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hw_handoff/lab6.hwh
+Generated Block Design Tcl file C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hw_handoff/lab6_bd.tcl
+Generated Hardware Definition File C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP lab6_auto_pc_0, cache-ID = 83e7b606e4f79014; cache size = 588.953 MB.
+[Wed Jun 21 18:28:49 2017] Launched lab6_me_match_0_0_synth_1, synth_1...
+Run output will be captured here:
+lab6_me_match_0_0_synth_1: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/lab6_me_match_0_0_synth_1/runme.log
+synth_1: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/synth_1/runme.log
+[Wed Jun 21 18:28:50 2017] Launched impl_1...
+Run output will be captured here: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 6767.996 ; gain = 43.555
+report_ip_status -name ip_status 
+file copy -force C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/impl_1/lab6_wrapper.sysdef C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+
+launch_sdk -workspace C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk -hwspec C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk -hwspec C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -name timing_2
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd]
+refresh_design
+INFO: [Netlist 29-17] Analyzing 2190 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+WARNING: [Netlist 29-43] Netlist 'lab6_wrapper' is not ideal for floorplanning, since the cellview 'lab6_me_match_0_0_me_match_v1_0_S00_AXI' defined in file 'lab6_me_match_0_0.edf' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/.Xil/Vivado-4176-shlab_42-PC/dcp/lab6_wrapper_early.xdc]
+Finished Parsing XDC File [C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/.Xil/Vivado-4176-shlab_42-PC/dcp/lab6_wrapper_early.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 6767.996 ; gain = 0.000
+Restored from archive | CPU: 5.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 6767.996 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:21 . Memory (MB): peak = 6767.996 ; gain = 0.000
+open_report: Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 6767.996 ; gain = 0.000
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+ipx::edit_ip_in_project -upgrade true -name me_match_v1_0_v1_0_project -directory C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.tmp/me_match_v1_0_v1_0_project c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/shlab_89/desktop/0620_lab_bram/0316303_0619/0316303_0619.tmp/me_match_v1_0_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/shlab_89/Desktop/0620_lab_BRAM/ip_repo/me_match_1.0'.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.

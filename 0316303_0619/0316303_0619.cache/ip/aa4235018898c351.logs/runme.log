@@ -1,0 +1,634 @@
+
+*** Running vivado
+    with args -log lab6_me_match_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab6_me_match_0_0.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source lab6_me_match_0_0.tcl -notrace
+Command: synth_design -top lab6_me_match_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4160 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 288.191 ; gain = 78.203
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'lab6_me_match_0_0' [c:/Users/shlab_61/Downloads/0619_lab/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ip/lab6_me_match_0_0/synth/lab6_me_match_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'me_match_v1_0' [c:/Users/shlab_61/Downloads/0619_lab/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/f3b2/hdl/me_match_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'me_match_v1_0_S00_AXI' [c:/Users/shlab_61/Downloads/0619_lab/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/f3b2/hdl/me_match_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 4 - type: integer 
+	Parameter S_IDLE bound to: 3'b000 
+	Parameter S_SHIFT_ABS bound to: 3'b001 
+	Parameter S_LOAD bound to: 3'b010 
+	Parameter S_SAD bound to: 3'b011 
+	Parameter S_MIN_SAD bound to: 3'b100 
+	Parameter S_CHECK_END bound to: 3'b101 
+INFO: [Synth 8-256] done synthesizing module 'me_match_v1_0_S00_AXI' (1#1) [c:/Users/shlab_61/Downloads/0619_lab/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/f3b2/hdl/me_match_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-256] done synthesizing module 'me_match_v1_0' (2#1) [c:/Users/shlab_61/Downloads/0619_lab/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/f3b2/hdl/me_match_v1_0.v:4]
+INFO: [Synth 8-256] done synthesizing module 'lab6_me_match_0_0' (3#1) [c:/Users/shlab_61/Downloads/0619_lab/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ip/lab6_me_match_0_0/synth/lab6_me_match_0_0.v:57]
+WARNING: [Synth 8-3331] design me_match_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design me_match_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design me_match_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design me_match_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design me_match_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design me_match_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:31 ; elapsed = 00:00:38 . Memory (MB): peak = 668.184 ; gain = 458.195
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:45 . Memory (MB): peak = 668.184 ; gain = 458.195
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1102.133 ; gain = 47.324
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:17 ; elapsed = 00:01:26 . Memory (MB): peak = 1102.133 ; gain = 892.145
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-5544] ROM "reg_partial_sum_2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Q_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "Q_next" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Q_next" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mvx" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mvx" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "sad" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "finish" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[16]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[17]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[18]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[19]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[20]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[21]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[22]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[23]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[24]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[25]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[26]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[27]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[28]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[29]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[30]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[31]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[32]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[33]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[34]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[35]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[36]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[37]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[38]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[39]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[40]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[41]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[42]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[43]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[44]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[45]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[46]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[47]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:02 ; elapsed = 00:02:13 . Memory (MB): peak = 1102.539 ; gain = 892.551
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------------------+------------+----------+
+|      |RTL Partition               |Replication |Instances |
++------+----------------------------+------------+----------+
+|1     |me_match_v1_0_S00_AXI__GB0  |           1|     37470|
+|2     |me_match_v1_0_S00_AXI__GB1  |           1|     12948|
+|3     |me_match_v1_0_S00_AXI__GB2  |           1|     19422|
+|4     |me_match_v1_0_S00_AXI__GB3  |           1|     21652|
+|5     |me_match_v1_0_S00_AXI__GB4  |           1|     29421|
+|6     |me_match_v1_0_S00_AXI__GB5  |           1|     35959|
+|7     |case__619__GD               |           1|     32640|
+|8     |me_match_v1_0_S00_AXI__GB8  |           1|     35909|
+|9     |me_match_v1_0_S00_AXI__GB9  |           1|     35909|
+|10    |case__499__GD               |           1|     32640|
+|11    |case__328__GD               |           1|     32640|
+|12    |case__455__GD               |           1|     32640|
+|13    |case__663__GD               |           1|     32640|
+|14    |case__787__GD               |           1|     32640|
+|15    |case__789__GD               |           1|     32640|
+|16    |me_match_v1_0_S00_AXI__GB16 |           1|     33152|
+|17    |me_match_v1_0_S00_AXI__GB17 |           1|     33152|
+|18    |case__498__GD               |           1|     32640|
+|19    |me_match_v1_0_S00_AXI__GB19 |           1|      2040|
+|20    |me_match_v1_0_S00_AXI__GB20 |           1|      2690|
+|21    |me_match_v1_0_S00_AXI__GB21 |           1|      3041|
+|22    |me_match_v1_0_S00_AXI__GB22 |           1|      3859|
+|23    |case__371__GD               |           1|     32640|
+|24    |case__370__GD               |           1|     32640|
+|25    |case__454__GD               |           1|     32640|
+|26    |me_match_v1_0_S00_AXI__GB26 |           1|     33792|
+|27    |case__373__GD               |           1|     32640|
+|28    |case__330__GD               |           1|     32640|
+|29    |case__331__GD               |           1|       384|
+|30    |me_match_v1_0_S00_AXI__GB30 |           1|     33152|
+|31    |case__329__GD               |           1|     32640|
+|32    |case__327__GD               |           1|     32640|
+|33    |case__788__GD               |           1|     32640|
+|34    |case__662__GD               |           1|     32640|
+|35    |me_match_v1_0_S00_AXI__GB35 |           1|     26971|
+|36    |me_match_v1_0_S00_AXI__GB36 |           1|     21582|
+|37    |me_match_v1_0_S00_AXI__GB37 |           1|     36197|
+|38    |me_match_v1_0_S00_AXI__GB38 |           1|     32768|
+|39    |case__786__GD               |           1|     32640|
+|40    |me_match_v1_0_S00_AXI__GB40 |           1|        26|
+|41    |me_match_v1_0_S00_AXI__GB41 |           1|     35909|
+|42    |me_match_v1_0_S00_AXI__GB42 |           1|     33029|
+|43    |me_match_v1_0_S00_AXI__GB43 |           1|      6706|
+|44    |me_match_v1_0_S00_AXI__GB44 |           1|     36133|
+|45    |case__744__GD               |           1|     32640|
+|46    |me_match_v1_0_S00_AXI__GB46 |           1|       326|
+|47    |me_match_v1_0_S00_AXI__GB47 |           1|     35877|
+|48    |me_match_v1_0_S00_AXI__GB48 |           1|     11554|
+|49    |case__944__GD               |           1|     32640|
+|50    |me_match_v1_0_S00_AXI__GB50 |           1|        32|
+|51    |case__661__GD               |           1|     32640|
+|52    |case__660__GD               |           1|     32640|
++------+----------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	  16 Input     16 Bit       Adders := 1     
+	   4 Input     12 Bit       Adders := 16    
+	   4 Input     10 Bit       Adders := 64    
+	   3 Input      8 Bit       Adders := 256   
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	              384 Bit    Registers := 48    
+	              128 Bit    Registers := 32    
+	               32 Bit    Registers := 25    
+	               12 Bit    Registers := 16    
+	               10 Bit    Registers := 64    
+	                8 Bit    Registers := 256   
+	                7 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	  18 Input    384 Bit        Muxes := 48    
+	   2 Input    384 Bit        Muxes := 96    
+	   7 Input    128 Bit        Muxes := 16    
+	   2 Input    128 Bit        Muxes := 49    
+	   5 Input    128 Bit        Muxes := 16    
+	   7 Input     32 Bit        Muxes := 6     
+	   2 Input     32 Bit        Muxes := 20    
+	  18 Input     32 Bit        Muxes := 17    
+	   2 Input      8 Bit        Muxes := 774   
+	   3 Input      8 Bit        Muxes := 16    
+	  18 Input      3 Bit        Muxes := 16    
+	   8 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 10    
+	   7 Input      1 Bit        Muxes := 8     
+	   8 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module me_match_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	  16 Input     16 Bit       Adders := 1     
+	   4 Input     12 Bit       Adders := 16    
+	   4 Input     10 Bit       Adders := 64    
+	   3 Input      8 Bit       Adders := 256   
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	              384 Bit    Registers := 48    
+	              128 Bit    Registers := 32    
+	               32 Bit    Registers := 25    
+	               12 Bit    Registers := 16    
+	               10 Bit    Registers := 64    
+	                8 Bit    Registers := 256   
+	                7 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	  18 Input    384 Bit        Muxes := 48    
+	   2 Input    384 Bit        Muxes := 96    
+	   7 Input    128 Bit        Muxes := 16    
+	   2 Input    128 Bit        Muxes := 49    
+	   5 Input    128 Bit        Muxes := 16    
+	   7 Input     32 Bit        Muxes := 6     
+	   2 Input     32 Bit        Muxes := 20    
+	  18 Input     32 Bit        Muxes := 17    
+	   2 Input      8 Bit        Muxes := 774   
+	   3 Input      8 Bit        Muxes := 16    
+	  18 Input      3 Bit        Muxes := 16    
+	   8 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 10    
+	   7 Input      1 Bit        Muxes := 8     
+	   8 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "sa_bank_reg[40]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[41]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[42]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[43]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[44]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[38]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[39]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[25]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[24]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[23]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[22]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[21]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[20]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[19]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[18]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[17]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[32]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[33]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[31]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[30]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sa_bank_reg[29]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3331] design lab6_me_match_0_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design lab6_me_match_0_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design lab6_me_match_0_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design lab6_me_match_0_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design lab6_me_match_0_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design lab6_me_match_0_0 has unconnected port s00_axi_arprot[0]
+INFO: [Synth 8-3886] merging instance 'me_match_v1_0_S00_AXI_insti_39/axi_bresp_reg[0]' (FDRE) to 'me_match_v1_0_S00_AXI_insti_39/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (me_match_v1_0_S00_AXI_insti_39/\axi_bresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'axi_rresp_reg[0]' (FDRE) to 'axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'min_sad_reg[16]' (FDE) to 'min_sad_reg[31]'
+INFO: [Synth 8-3886] merging instance 'min_sad_reg[17]' (FDE) to 'min_sad_reg[31]'
+INFO: [Synth 8-3886] merging instance 'min_sad_reg[18]' (FDE) to 'min_sad_reg[31]'
+INFO: [Synth 8-3886] merging instance 'min_sad_reg[19]' (FDE) to 'min_sad_reg[31]'
+INFO: [Synth 8-3886] merging instance 'min_sad_reg[20]' (FDE) to 'min_sad_reg[31]'
+INFO: [Synth 8-3886] merging instance 'min_sad_reg[21]' (FDE) to 'min_sad_reg[31]'
+INFO: [Synth 8-3886] merging instance 'min_sad_reg[22]' (FDE) to 'min_sad_reg[31]'
+INFO: [Synth 8-3886] merging instance 'min_sad_reg[23]' (FDE) to 'min_sad_reg[31]'
+INFO: [Synth 8-3886] merging instance 'min_sad_reg[24]' (FDE) to 'min_sad_reg[31]'
+INFO: [Synth 8-3886] merging instance 'min_sad_reg[25]' (FDE) to 'min_sad_reg[31]'
+INFO: [Synth 8-3886] merging instance 'min_sad_reg[26]' (FDE) to 'min_sad_reg[31]'
+INFO: [Synth 8-3886] merging instance 'min_sad_reg[27]' (FDE) to 'min_sad_reg[31]'
+INFO: [Synth 8-3886] merging instance 'min_sad_reg[28]' (FDE) to 'min_sad_reg[31]'
+INFO: [Synth 8-3886] merging instance 'min_sad_reg[29]' (FDE) to 'min_sad_reg[31]'
+INFO: [Synth 8-3886] merging instance 'min_sad_reg[30]' (FDE) to 'min_sad_reg[31]'
+INFO: [Synth 8-4471] merging register 'mvx_reg[31:0]' into 'mvx_reg[31:0]' [c:/Users/shlab_61/Downloads/0619_lab/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/f3b2/hdl/me_match_v1_0_S00_AXI.v:689]
+WARNING: [Synth 8-3917] design me_match_v1_0_S00_AXI__GB48 has port P[2] driven by constant 0
+WARNING: [Synth 8-3917] design me_match_v1_0_S00_AXI__GB48 has port P[1] driven by constant 0
+WARNING: [Synth 8-3917] design me_match_v1_0_S00_AXI__GB48 has port P[0] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:51 ; elapsed = 00:04:08 . Memory (MB): peak = 1108.352 ; gain = 898.363
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------------------+------------+----------+
+|      |RTL Partition               |Replication |Instances |
++------+----------------------------+------------+----------+
+|1     |me_match_v1_0_S00_AXI__GB0  |           1|     34003|
+|2     |me_match_v1_0_S00_AXI__GB1  |           1|     10643|
+|3     |me_match_v1_0_S00_AXI__GB2  |           1|     15955|
+|4     |me_match_v1_0_S00_AXI__GB3  |           1|      7582|
+|5     |me_match_v1_0_S00_AXI__GB4  |           1|     12455|
+|6     |me_match_v1_0_S00_AXI__GB5  |           1|     15207|
+|7     |case__619__GD               |           1|      1271|
+|8     |me_match_v1_0_S00_AXI__GB8  |           1|      2479|
+|9     |me_match_v1_0_S00_AXI__GB9  |           1|      2479|
+|10    |case__499__GD               |           1|      1271|
+|11    |case__328__GD               |           1|      1271|
+|12    |case__455__GD               |           1|      1271|
+|13    |case__663__GD               |           1|      1271|
+|14    |case__787__GD               |           1|      1271|
+|15    |case__789__GD               |           1|      1271|
+|16    |me_match_v1_0_S00_AXI__GB16 |           1|      2295|
+|17    |me_match_v1_0_S00_AXI__GB17 |           1|      2039|
+|18    |case__498__GD               |           1|      1271|
+|19    |me_match_v1_0_S00_AXI__GB19 |           1|        47|
+|20    |me_match_v1_0_S00_AXI__GB20 |           1|        53|
+|21    |me_match_v1_0_S00_AXI__GB21 |           1|       101|
+|22    |me_match_v1_0_S00_AXI__GB22 |           1|        64|
+|23    |case__371__GD               |           1|      1271|
+|24    |case__370__GD               |           1|      1271|
+|25    |case__454__GD               |           1|      1271|
+|26    |me_match_v1_0_S00_AXI__GB26 |           1|      3191|
+|27    |case__373__GD               |           1|      1271|
+|28    |case__330__GD               |           1|      1271|
+|29    |case__331__GD               |           1|       640|
+|30    |me_match_v1_0_S00_AXI__GB30 |           1|      2039|
+|31    |case__329__GD               |           1|      1271|
+|32    |case__327__GD               |           1|      1271|
+|33    |case__788__GD               |           1|      1271|
+|34    |case__662__GD               |           1|      1271|
+|35    |me_match_v1_0_S00_AXI__GB35 |           1|     25254|
+|36    |me_match_v1_0_S00_AXI__GB36 |           1|     14513|
+|37    |me_match_v1_0_S00_AXI__GB37 |           1|      3023|
+|38    |me_match_v1_0_S00_AXI__GB38 |           1|      1399|
+|39    |case__786__GD               |           1|      1271|
+|40    |me_match_v1_0_S00_AXI__GB40 |           1|        24|
+|41    |me_match_v1_0_S00_AXI__GB41 |           1|      2479|
+|42    |me_match_v1_0_S00_AXI__GB42 |           1|      1916|
+|43    |me_match_v1_0_S00_AXI__GB43 |           1|      5919|
+|44    |me_match_v1_0_S00_AXI__GB44 |           1|      2959|
+|45    |case__744__GD               |           1|      1271|
+|46    |me_match_v1_0_S00_AXI__GB46 |           1|       590|
+|47    |me_match_v1_0_S00_AXI__GB47 |           1|      2447|
+|48    |me_match_v1_0_S00_AXI__GB48 |           1|      5209|
+|49    |case__944__GD               |           1|      1271|
+|50    |me_match_v1_0_S00_AXI__GB50 |           1|        40|
+|51    |case__661__GD               |           1|      1271|
+|52    |case__660__GD               |           1|      1271|
++------+----------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:05 ; elapsed = 00:04:22 . Memory (MB): peak = 1115.906 ; gain = 905.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:04:10 ; elapsed = 00:04:28 . Memory (MB): peak = 1116.781 ; gain = 906.793
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------------------+------------+----------+
+|      |RTL Partition               |Replication |Instances |
++------+----------------------------+------------+----------+
+|1     |me_match_v1_0_S00_AXI__GB0  |           1|     24091|
+|2     |me_match_v1_0_S00_AXI__GB1  |           1|      4035|
+|3     |me_match_v1_0_S00_AXI__GB2  |           1|      6043|
+|4     |me_match_v1_0_S00_AXI__GB3  |           1|      4810|
+|5     |me_match_v1_0_S00_AXI__GB4  |           1|      7648|
+|6     |me_match_v1_0_S00_AXI__GB5  |           1|      9334|
+|7     |case__619__GD               |           1|       848|
+|8     |me_match_v1_0_S00_AXI__GB8  |           1|      1692|
+|9     |me_match_v1_0_S00_AXI__GB9  |           1|      1692|
+|10    |case__499__GD               |           1|       848|
+|11    |case__328__GD               |           1|       848|
+|12    |case__455__GD               |           1|       848|
+|13    |case__663__GD               |           1|       848|
+|14    |case__787__GD               |           1|       848|
+|15    |case__789__GD               |           1|       848|
+|16    |me_match_v1_0_S00_AXI__GB16 |           1|      1872|
+|17    |me_match_v1_0_S00_AXI__GB17 |           1|      1616|
+|18    |case__498__GD               |           1|       848|
+|19    |me_match_v1_0_S00_AXI__GB19 |           1|        47|
+|20    |me_match_v1_0_S00_AXI__GB20 |           1|        53|
+|21    |me_match_v1_0_S00_AXI__GB21 |           1|       101|
+|22    |me_match_v1_0_S00_AXI__GB22 |           1|        64|
+|23    |case__371__GD               |           1|       848|
+|24    |case__370__GD               |           1|       848|
+|25    |case__454__GD               |           1|       848|
+|26    |me_match_v1_0_S00_AXI__GB26 |           1|      2768|
+|27    |case__373__GD               |           1|       848|
+|28    |case__330__GD               |           1|       848|
+|29    |case__331__GD               |           1|       640|
+|30    |me_match_v1_0_S00_AXI__GB30 |           1|      1616|
+|31    |case__329__GD               |           1|       848|
+|32    |case__327__GD               |           1|       848|
+|33    |case__788__GD               |           1|       848|
+|34    |case__662__GD               |           1|       848|
+|35    |me_match_v1_0_S00_AXI__GB35 |           1|     23693|
+|36    |me_match_v1_0_S00_AXI__GB36 |           1|     14513|
+|37    |me_match_v1_0_S00_AXI__GB37 |           1|      2236|
+|38    |me_match_v1_0_S00_AXI__GB38 |           1|       976|
+|39    |case__786__GD               |           1|       848|
+|40    |me_match_v1_0_S00_AXI__GB40 |           1|        24|
+|41    |me_match_v1_0_S00_AXI__GB41 |           1|      1692|
+|42    |me_match_v1_0_S00_AXI__GB42 |           1|      1493|
+|43    |me_match_v1_0_S00_AXI__GB43 |           1|      5695|
+|44    |me_match_v1_0_S00_AXI__GB44 |           1|      2200|
+|45    |case__744__GD               |           1|       848|
+|46    |me_match_v1_0_S00_AXI__GB46 |           1|       555|
+|47    |me_match_v1_0_S00_AXI__GB47 |           1|      1688|
+|48    |me_match_v1_0_S00_AXI__GB48 |           1|      5209|
+|49    |case__944__GD               |           1|       848|
+|50    |me_match_v1_0_S00_AXI__GB50 |           1|         5|
+|51    |case__661__GD               |           1|       848|
+|52    |case__660__GD               |           1|       848|
++------+----------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:04:28 ; elapsed = 00:04:52 . Memory (MB): peak = 1127.883 ; gain = 917.895
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------------------+------------+----------+
+|      |RTL Partition               |Replication |Instances |
++------+----------------------------+------------+----------+
+|1     |me_match_v1_0_S00_AXI__GB0  |           1|     11052|
+|2     |me_match_v1_0_S00_AXI__GB35 |           1|      7742|
+|3     |me_match_v1_0_S00_AXI__GB36 |           1|      4995|
++------+----------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:04:41 ; elapsed = 00:05:04 . Memory (MB): peak = 1127.883 ; gain = 917.895
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:41 ; elapsed = 00:05:05 . Memory (MB): peak = 1127.883 ; gain = 917.895
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:44 ; elapsed = 00:05:08 . Memory (MB): peak = 1127.883 ; gain = 917.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:44 ; elapsed = 00:05:08 . Memory (MB): peak = 1127.883 ; gain = 917.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:51 ; elapsed = 00:05:15 . Memory (MB): peak = 1127.883 ; gain = 917.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:51 ; elapsed = 00:05:15 . Memory (MB): peak = 1127.883 ; gain = 917.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |  1094|
+|2     |LUT1   |   236|
+|3     |LUT2   |  2606|
+|4     |LUT3   |  6522|
+|5     |LUT4   |  4705|
+|6     |LUT5   |  4588|
+|7     |LUT6   | 14210|
+|8     |MUXF7  |  2368|
+|9     |MUXF8  |  1152|
+|10    |FDRE   | 26436|
+|11    |FDSE   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------------------+----------------------+------+
+|      |Instance                       |Module                |Cells |
++------+-------------------------------+----------------------+------+
+|1     |top                            |                      | 63933|
+|2     |  inst                         |me_match_v1_0         | 63921|
+|3     |    me_match_v1_0_S00_AXI_inst |me_match_v1_0_S00_AXI | 63921|
++------+-------------------------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:51 ; elapsed = 00:05:16 . Memory (MB): peak = 1127.883 ; gain = 917.895
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:40 ; elapsed = 00:04:36 . Memory (MB): peak = 1127.883 ; gain = 482.168
+Synthesis Optimization Complete : Time (s): cpu = 00:04:51 ; elapsed = 00:05:17 . Memory (MB): peak = 1127.883 ; gain = 917.895
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1094 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'lab6_me_match_0_0' is not ideal for floorplanning, since the cellview 'me_match_v1_0_S00_AXI' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+243 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:05:01 ; elapsed = 00:05:24 . Memory (MB): peak = 1127.883 ; gain = 916.117
+INFO: [Common 17-1381] The checkpoint 'C:/Users/shlab_61/Downloads/0619_lab/0316303_0619/0316303_0619.runs/lab6_me_match_0_0_synth_1/lab6_me_match_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1127.883 ; gain = 0.000
+write_vhdl: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1127.883 ; gain = 0.000

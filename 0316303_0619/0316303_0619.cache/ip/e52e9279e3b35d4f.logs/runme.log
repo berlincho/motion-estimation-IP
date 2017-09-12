@@ -1,0 +1,681 @@
+
+*** Running vivado
+    with args -log lab6_me_match_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab6_me_match_0_0.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source lab6_me_match_0_0.tcl -notrace
+Command: synth_design -top lab6_me_match_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8476 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 290.020 ; gain = 79.660
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'lab6_me_match_0_0' [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ip/lab6_me_match_0_0/synth/lab6_me_match_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'me_match_v1_0' [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'me_match_v1_0_S00_AXI' [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 4 - type: integer 
+	Parameter S_IDLE bound to: 3'b000 
+	Parameter S_SHIFT_ABS bound to: 3'b001 
+	Parameter S_LOAD bound to: 3'b010 
+	Parameter S_SAD bound to: 3'b011 
+	Parameter S_MIN_SAD bound to: 3'b100 
+	Parameter S_CHECK_END bound to: 3'b101 
+INFO: [Synth 8-638] synthesizing module 'sram' [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:977]
+	Parameter DATA_WIDTH bound to: 384 - type: integer 
+	Parameter ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter RAM_SIZE bound to: 48 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sram' (1#1) [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:977]
+INFO: [Synth 8-256] done synthesizing module 'me_match_v1_0_S00_AXI' (2#1) [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-256] done synthesizing module 'me_match_v1_0' (3#1) [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0.v:4]
+INFO: [Synth 8-256] done synthesizing module 'lab6_me_match_0_0' (4#1) [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ip/lab6_me_match_0_0/synth/lab6_me_match_0_0.v:57]
+WARNING: [Synth 8-3331] design sram has unconnected port sram_addr[31]
+WARNING: [Synth 8-3331] design sram has unconnected port sram_addr[30]
+WARNING: [Synth 8-3331] design sram has unconnected port sram_addr[29]
+WARNING: [Synth 8-3331] design sram has unconnected port sram_addr[28]
+WARNING: [Synth 8-3331] design sram has unconnected port sram_addr[27]
+WARNING: [Synth 8-3331] design sram has unconnected port sram_addr[26]
+WARNING: [Synth 8-3331] design sram has unconnected port sram_addr[25]
+WARNING: [Synth 8-3331] design sram has unconnected port sram_addr[24]
+WARNING: [Synth 8-3331] design sram has unconnected port sram_addr[23]
+WARNING: [Synth 8-3331] design sram has unconnected port sram_addr[22]
+WARNING: [Synth 8-3331] design sram has unconnected port sram_addr[21]
+WARNING: [Synth 8-3331] design sram has unconnected port sram_addr[20]
+WARNING: [Synth 8-3331] design sram has unconnected port sram_addr[19]
+WARNING: [Synth 8-3331] design sram has unconnected port sram_addr[18]
+WARNING: [Synth 8-3331] design sram has unconnected port sram_addr[17]
+WARNING: [Synth 8-3331] design sram has unconnected port sram_addr[16]
+WARNING: [Synth 8-3331] design sram has unconnected port sram_addr[15]
+WARNING: [Synth 8-3331] design sram has unconnected port sram_addr[14]
+WARNING: [Synth 8-3331] design sram has unconnected port sram_addr[13]
+WARNING: [Synth 8-3331] design sram has unconnected port sram_addr[12]
+WARNING: [Synth 8-3331] design sram has unconnected port sram_addr[11]
+WARNING: [Synth 8-3331] design sram has unconnected port sram_addr[10]
+WARNING: [Synth 8-3331] design sram has unconnected port sram_addr[9]
+WARNING: [Synth 8-3331] design sram has unconnected port sram_addr[8]
+WARNING: [Synth 8-3331] design sram has unconnected port sram_addr[7]
+WARNING: [Synth 8-3331] design sram has unconnected port sram_addr[6]
+WARNING: [Synth 8-3331] design me_match_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design me_match_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design me_match_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design me_match_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design me_match_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design me_match_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 406.305 ; gain = 195.945
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 406.305 ; gain = 195.945
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.750 . Memory (MB): peak = 738.082 ; gain = 12.645
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:39 . Memory (MB): peak = 738.082 ; gain = 527.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:39 . Memory (MB): peak = 738.082 ; gain = 527.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:39 . Memory (MB): peak = 738.082 ; gain = 527.723
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:767]
+INFO: [Common 17-14] Message 'Synth 8-5818' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:963]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:963]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:963]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:963]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:902]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:902]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:902]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:902]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:963]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:963]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:963]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:963]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:902]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:902]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:902]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:902]
+INFO: [Synth 8-5545] ROM "cb_bank_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "reg_partial_sum_2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "Q_next" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "Q_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "Q_next" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_out_addr" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_out_addr" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_out_addr" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "sad" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:42 ; elapsed = 00:00:49 . Memory (MB): peak = 738.082 ; gain = 527.723
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------------------+------------+----------+
+|      |RTL Partition               |Replication |Instances |
++------+----------------------------+------------+----------+
+|1     |me_match_v1_0_S00_AXI__GB0  |           1|     26855|
+|2     |me_match_v1_0_S00_AXI__GB1  |           1|      6830|
+|3     |me_match_v1_0_S00_AXI__GB2  |           1|      8258|
+|4     |me_match_v1_0_S00_AXI__GB3  |           1|     20296|
+|5     |me_match_v1_0_S00_AXI__GB4  |           1|     21118|
+|6     |case__41__GD                |           1|     32640|
+|7     |me_match_v1_0_S00_AXI__GB6  |           1|     11545|
+|8     |case__571__GD               |           1|     32640|
+|9     |case__570__GD               |           1|     32640|
+|10    |case__40__GD                |           1|     32640|
+|11    |me_match_v1_0_S00_AXI__GB10 |           1|        77|
++------+----------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 9     
+	   8 Input     16 Bit       Adders := 2     
+	   8 Input     13 Bit       Adders := 16    
+	   4 Input     10 Bit       Adders := 128   
+	   3 Input      8 Bit       Adders := 512   
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	              384 Bit    Registers := 1     
+	              128 Bit    Registers := 48    
+	               32 Bit    Registers := 30    
+	               13 Bit    Registers := 16    
+	               10 Bit    Registers := 128   
+	                8 Bit    Registers := 512   
+	                7 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---RAMs : 
+	              18K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input    384 Bit        Muxes := 1     
+	   7 Input    128 Bit        Muxes := 30    
+	   2 Input    128 Bit        Muxes := 2     
+	   7 Input     32 Bit        Muxes := 9     
+	   2 Input     32 Bit        Muxes := 25    
+	  18 Input     32 Bit        Muxes := 17    
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1024  
+	   2 Input      3 Bit        Muxes := 2     
+	   7 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 26    
+	   9 Input      1 Bit        Muxes := 16    
+	   7 Input      1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module sram 
+Detailed RTL Component Info : 
++---Registers : 
+	              384 Bit    Registers := 1     
++---RAMs : 
+	              18K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input    384 Bit        Muxes := 1     
+Module me_match_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 9     
+	   8 Input     16 Bit       Adders := 2     
+	   8 Input     13 Bit       Adders := 16    
+	   4 Input     10 Bit       Adders := 128   
+	   3 Input      8 Bit       Adders := 512   
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	              128 Bit    Registers := 48    
+	               32 Bit    Registers := 30    
+	               13 Bit    Registers := 16    
+	               10 Bit    Registers := 128   
+	                8 Bit    Registers := 512   
+	                7 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   7 Input    128 Bit        Muxes := 30    
+	   2 Input    128 Bit        Muxes := 2     
+	   7 Input     32 Bit        Muxes := 9     
+	   2 Input     32 Bit        Muxes := 25    
+	  18 Input     32 Bit        Muxes := 17    
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1024  
+	   2 Input      3 Bit        Muxes := 2     
+	   7 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 26    
+	   9 Input      1 Bit        Muxes := 16    
+	   7 Input      1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design lab6_me_match_0_0 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design lab6_me_match_0_0 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design lab6_me_match_0_0 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design lab6_me_match_0_0 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design lab6_me_match_0_0 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design lab6_me_match_0_0 has unconnected port s00_axi_arprot[0]
+INFO: [Synth 8-3886] merging instance 'me_match_v1_0_S00_AXI_insti_10/axi_rresp_reg[0]' (FDRE) to 'me_match_v1_0_S00_AXI_insti_10/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (me_match_v1_0_S00_AXI_insti_10/\axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'me_match_v1_0_S00_AXI_insti_10/axi_bresp_reg[0]' (FDRE) to 'me_match_v1_0_S00_AXI_insti_10/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (me_match_v1_0_S00_AXI_insti_10/\axi_bresp_reg[1] )
+INFO: [Synth 8-4471] merging register 'mvx_reg[31:0]' into 'mvx_reg[31:0]' [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:727]
+INFO: [Synth 8-4471] merging register 'mvx1_reg[31:0]' into 'mvx1_reg[31:0]' [c:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/ipshared/c3d3/hdl/me_match_v1_0_S00_AXI.v:728]
+INFO: [Synth 8-5545] ROM "cb_bank_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cb_bank_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Q_next" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_out_addr" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_out_addr" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_out_addr" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3917] design me_match_v1_0_S00_AXI__GB6 has port P[2] driven by constant 0
+WARNING: [Synth 8-3917] design me_match_v1_0_S00_AXI__GB6 has port P[1] driven by constant 0
+WARNING: [Synth 8-3917] design me_match_v1_0_S00_AXI__GB6 has port P[0] driven by constant 0
+WARNING: [Synth 8-3917] design me_match_v1_0_S00_AXI__GB6 has port O44[2] driven by constant 0
+WARNING: [Synth 8-3917] design me_match_v1_0_S00_AXI__GB6 has port O44[1] driven by constant 0
+WARNING: [Synth 8-3917] design me_match_v1_0_S00_AXI__GB6 has port O44[0] driven by constant 0
+INFO: [Synth 8-3886] merging instance 'min_sad_reg[16]' (FDE) to 'min_sad_reg[17]'
+INFO: [Synth 8-3886] merging instance 'min_sad_reg[17]' (FDE) to 'min_sad_reg[18]'
+INFO: [Synth 8-3886] merging instance 'min_sad_reg[18]' (FDE) to 'min_sad_reg[19]'
+INFO: [Synth 8-3886] merging instance 'min_sad_reg[19]' (FDE) to 'min_sad_reg[20]'
+INFO: [Synth 8-3886] merging instance 'min_sad_reg[20]' (FDE) to 'min_sad_reg[21]'
+INFO: [Synth 8-3886] merging instance 'min_sad_reg[21]' (FDE) to 'min_sad_reg[22]'
+INFO: [Synth 8-3886] merging instance 'min_sad_reg[22]' (FDE) to 'min_sad_reg[23]'
+INFO: [Synth 8-3886] merging instance 'min_sad_reg[23]' (FDE) to 'min_sad_reg[24]'
+INFO: [Synth 8-3886] merging instance 'min_sad_reg[24]' (FDE) to 'min_sad_reg[25]'
+INFO: [Synth 8-3886] merging instance 'min_sad_reg[25]' (FDE) to 'min_sad_reg[26]'
+INFO: [Synth 8-3886] merging instance 'min_sad_reg[26]' (FDE) to 'min_sad_reg[27]'
+INFO: [Synth 8-3886] merging instance 'min_sad_reg[27]' (FDE) to 'min_sad_reg[28]'
+INFO: [Synth 8-3886] merging instance 'min_sad_reg[28]' (FDE) to 'min_sad_reg[29]'
+INFO: [Synth 8-3886] merging instance 'min_sad_reg[29]' (FDE) to 'min_sad_reg[30]'
+INFO: [Synth 8-3886] merging instance 'min_sad_reg[30]' (FDE) to 'min_sad_reg[31]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:16 ; elapsed = 00:01:43 . Memory (MB): peak = 738.082 ; gain = 527.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++---------------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|me_match_v1_0_S00_AXI__GB6 | sa_bank/RAM_reg | 64 x 384(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 11     | 0      | 
++---------------------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------------------+------------+----------+
+|      |RTL Partition               |Replication |Instances |
++------+----------------------------+------------+----------+
+|1     |me_match_v1_0_S00_AXI__GB0  |           1|     30344|
+|2     |me_match_v1_0_S00_AXI__GB1  |           1|      7265|
+|3     |me_match_v1_0_S00_AXI__GB2  |           1|      8764|
+|4     |me_match_v1_0_S00_AXI__GB3  |           1|     22460|
+|5     |me_match_v1_0_S00_AXI__GB4  |           1|     24306|
+|6     |case__41__GD                |           1|      1271|
+|7     |me_match_v1_0_S00_AXI__GB6  |           1|      2847|
+|8     |case__571__GD               |           1|      1271|
+|9     |case__570__GD               |           1|      1271|
+|10    |case__40__GD                |           1|      1271|
+|11    |me_match_v1_0_S00_AXI__GB10 |           1|        67|
++------+----------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:31 ; elapsed = 00:01:59 . Memory (MB): peak = 744.758 ; gain = 534.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:32 ; elapsed = 00:01:59 . Memory (MB): peak = 746.688 ; gain = 536.328
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------------------+------------+----------+
+|      |RTL Partition               |Replication |Instances |
++------+----------------------------+------------+----------+
+|1     |me_match_v1_0_S00_AXI__GB0  |           1|     30344|
+|2     |me_match_v1_0_S00_AXI__GB1  |           1|      7265|
+|3     |me_match_v1_0_S00_AXI__GB2  |           1|      8764|
+|4     |me_match_v1_0_S00_AXI__GB3  |           1|     22460|
+|5     |me_match_v1_0_S00_AXI__GB4  |           1|     24306|
+|6     |case__41__GD                |           1|       848|
+|7     |me_match_v1_0_S00_AXI__GB6  |           1|      2847|
+|8     |case__571__GD               |           1|       848|
+|9     |case__570__GD               |           1|       645|
+|10    |case__40__GD                |           1|       645|
+|11    |me_match_v1_0_S00_AXI__GB10 |           1|        67|
++------+----------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3332] Sequential element (inst/me_match_v1_0_S00_AXI_inst/waitt_reg[2]) is unused and will be removed from module lab6_me_match_0_0.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_8 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_8 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_9 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_9 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_10 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_10 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:42 ; elapsed = 00:02:25 . Memory (MB): peak = 761.977 ; gain = 551.617
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------------+------------+----------+
+|      |RTL Partition              |Replication |Instances |
++------+---------------------------+------------+----------+
+|1     |me_match_v1_0_S00_AXI__GB0 |           1|     11489|
+|2     |me_match_v1_0_S00_AXI__GB3 |           1|      8100|
+|3     |me_match_v1_0_S00_AXI__GB4 |           1|      8921|
++------+---------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_8 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_8 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_9 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_9 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_10 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/me_match_v1_0_S00_AXI_inst/sa_bank/RAM_reg_10 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:47 ; elapsed = 00:02:31 . Memory (MB): peak = 761.977 ; gain = 551.617
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:48 ; elapsed = 00:02:31 . Memory (MB): peak = 761.977 ; gain = 551.617
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:50 ; elapsed = 00:02:33 . Memory (MB): peak = 761.977 ; gain = 551.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:50 ; elapsed = 00:02:33 . Memory (MB): peak = 761.977 ; gain = 551.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:51 ; elapsed = 00:02:34 . Memory (MB): peak = 761.977 ; gain = 551.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:51 ; elapsed = 00:02:35 . Memory (MB): peak = 761.977 ; gain = 551.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |  2177|
+|2     |LUT1     |   243|
+|3     |LUT2     |  4131|
+|4     |LUT3     |  5741|
+|5     |LUT4     |  5094|
+|6     |LUT5     |  5320|
+|7     |LUT6     |  2287|
+|8     |MUXF7    |    64|
+|9     |MUXF8    |    32|
+|10    |RAMB18E1 |    11|
+|11    |XORCY    |     1|
+|12    |FDRE     | 12662|
+|13    |FDSE     |    36|
++------+---------+------+
+
+Report Instance Areas: 
++------+-------------------------------+----------------------+------+
+|      |Instance                       |Module                |Cells |
++------+-------------------------------+----------------------+------+
+|1     |top                            |                      | 37799|
+|2     |  inst                         |me_match_v1_0         | 37798|
+|3     |    me_match_v1_0_S00_AXI_inst |me_match_v1_0_S00_AXI | 37798|
+|4     |      sa_bank                  |sram                  |  4770|
++------+-------------------------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:51 ; elapsed = 00:02:35 . Memory (MB): peak = 761.977 ; gain = 551.617
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:25 ; elapsed = 00:02:14 . Memory (MB): peak = 761.977 ; gain = 217.602
+Synthesis Optimization Complete : Time (s): cpu = 00:01:52 ; elapsed = 00:02:36 . Memory (MB): peak = 761.977 ; gain = 551.617
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2189 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'lab6_me_match_0_0' is not ideal for floorplanning, since the cellview 'me_match_v1_0_S00_AXI' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+249 Infos, 45 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:59 ; elapsed = 00:02:41 . Memory (MB): peak = 763.754 ; gain = 551.156
+INFO: [Common 17-1381] The checkpoint 'C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/lab6_me_match_0_0_synth_1/lab6_me_match_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 763.754 ; gain = 0.000

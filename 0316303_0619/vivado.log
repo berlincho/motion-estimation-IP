@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Jun 22 22:32:02 2017
+# Process ID: 6828
+# Current directory: C:/Users/shlab_89/Downloads/0620_lab_BRAM/0316303_0619
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4736 C:\Users\shlab_89\Downloads\0620_lab_BRAM\0316303_0619\0316303_0619.xpr
+# Log file: C:/Users/shlab_89/Downloads/0620_lab_BRAM/0316303_0619/vivado.log
+# Journal file: C:/Users/shlab_89/Downloads/0620_lab_BRAM/0316303_0619\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/shlab_89/Downloads/0620_lab_BRAM/0316303_0619/0316303_0619.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/shlab_89/Downloads/0620_lab_BRAM/ip_repo/me_match_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 816.914 ; gain = 147.895
+launch_sdk -workspace C:/Users/shlab_89/Downloads/0620_lab_BRAM/0316303_0619/0316303_0619.sdk -hwspec C:/Users/shlab_89/Downloads/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/shlab_89/Downloads/0620_lab_BRAM/0316303_0619/0316303_0619.sdk -hwspec C:/Users/shlab_89/Downloads/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+file copy -force C:/Users/shlab_89/Downloads/0620_lab_BRAM/0316303_0619/0316303_0619.runs/impl_1/lab6_wrapper.sysdef C:/Users/shlab_89/Downloads/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+
+launch_sdk -workspace C:/Users/shlab_89/Downloads/0620_lab_BRAM/0316303_0619/0316303_0619.sdk -hwspec C:/Users/shlab_89/Downloads/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/shlab_89/Downloads/0620_lab_BRAM/0316303_0619/0316303_0619.sdk -hwspec C:/Users/shlab_89/Downloads/0620_lab_BRAM/0316303_0619/0316303_0619.sdk/lab6_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 22 22:48:46 2017...

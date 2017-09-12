@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Jun 21 19:54:05 2017
+# Process ID: 6344
+# Current directory: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/impl_1
+# Command line: vivado.exe -log lab6_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source lab6_wrapper.tcl -notrace
+# Log file: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/impl_1/lab6_wrapper.vdi
+# Journal file: C:/Users/shlab_89/Desktop/0620_lab_BRAM/0316303_0619/0316303_0619.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source lab6_wrapper.tcl -notrace

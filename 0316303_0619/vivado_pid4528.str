@@ -1,0 +1,652 @@
+/*
+
+Vivado v2016.4 (64-bit)
+SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+Process ID: 4528
+
+Current time: 	6/21/17 3:52:35 AM CST
+Time zone: 	China Standard Time (Asia/Taipei)
+
+OS: Windows 8.1
+Version: 6.3
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Default font: family=PMingLiU,name=·s²Ó©úÅé,style=plain,size=12
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	F:/Xilinx/Vivado/2016.4/tps/win64/jre
+
+User name: 	Berlin
+User home directory: C:/Users/Berlin
+User working directory: C:/Users/Berlin/Desktop/0620/0620_lab_BRAM/0316303_0619
+User country: 	TW
+User language: 	zh
+User locale: 	zh_TW
+
+RDI base root directory: F:/Xilinx/Vivado
+RDI data directory: F:/Xilinx/Vivado/2016.4/data
+RDI bin directory: F:/Xilinx/Vivado/2016.4/bin
+
+Vivado preferences path: C:/Users/Berlin/AppData/Roaming/Xilinx/Vivado/2016.4/vivado.ini
+Vivado layouts directory: C:/Users/Berlin/AppData/Roaming/Xilinx/Vivado/2016.4/layouts
+
+GUI allocated memory:	231 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 434 MB
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bt:g (cd:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Berlin\Desktop\0620\0620_lab_BRAM\0316303_0619\0316303_0619.xpr. Version: Vivado v2016.4 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// [GUI Memory]: 41 MB (+40329kb) [00:00:04]
+// [Engine Memory]: 416 MB (+284498kb) [00:00:04]
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 48 MB (+5390kb) [00:00:06]
+// [Engine Memory]: 506 MB (+72661kb) [00:00:06]
+// [GUI Memory]: 58 MB (+7470kb) [00:00:07]
+// [GUI Memory]: 61 MB (+78kb) [00:00:07]
+// Tcl Message: open_project C:/Users/Berlin/Desktop/0620/0620_lab_BRAM/0316303_0619/0316303_0619.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/shlab_61/Downloads/0619_lab/0316303_0619' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Berlin/Desktop/0620/0620_lab_BRAM/ip_repo/me_match_1.0'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2016.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 530 MB. GUI used memory: 40 MB. Current time: 6/21/17 3:52:38 AM CST
+// Tcl Message: open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 816.496 ; gain = 135.508 
+// [Engine Memory]: 534 MB (+3191kb) [00:00:08]
+// Project name: 0316303_0619; location: C:/Users/Berlin/Desktop/0620/0620_lab_BRAM/0316303_0619; part: xc7z020clg484-1
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab6_wrapper (lab6_wrapper.v)]", 1); // y:i (D:JPanel, cd:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab6_wrapper (lab6_wrapper.v), lab6_i - lab6 (lab6.bd), lab6 (lab6.v)]", 3); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab6_wrapper (lab6_wrapper.v), lab6_i - lab6 (lab6.bd), lab6 (lab6.v), me_match_0 - lab6_me_match_0_0 (lab6_me_match_0_0.xci)]", 4, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab6_wrapper (lab6_wrapper.v), lab6_i - lab6 (lab6.bd), lab6 (lab6.v), me_match_0 - lab6_me_match_0_0 (lab6_me_match_0_0.xci)]", 4, false, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k:q (cd:JFrame): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, k:q)
+// bt:g (cd:JFrame):  Edit in IP Packager : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name me_match_v1_0_v1_0_project -directory C:/Users/Berlin/Desktop/0620/0620_lab_BRAM/0316303_0619/0316303_0619.tmp/me_match_v1_0_v1_0_project c:/Users/Berlin/Desktop/0620/0620_lab_BRAM/ip_repo/me_match_1.0/component.xml 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'c:/users/berlin/desktop/0620/0620_lab_bram/0316303_0619/0316303_0619.tmp/me_match_v1_0_v1_0_project' 
+// TclEventType: PROJECT_NEW
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2016.4/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 69 MB (+6012kb) [00:00:28]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 74 MB (+1683kb) [00:00:28]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// [Engine Memory]: 566 MB (+4883kb) [00:00:29]
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Berlin/Desktop/0620/0620_lab_BRAM/ip_repo/me_match_1.0'. INFO: [IP_Flow 19-795] Syncing license key meta-data INFO: [IP_Flow 19-793] Syncing display name meta-data INFO: [IP_Flow 19-798] Syncing taxonomy meta-data 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// 'i' command handler elapsed time: 5 seconds
+dismissDialog("Edit in IP Packager"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 53 MB. Current time: 6/21/17 3:53:03 AM CST
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 3, true); // y:i (D:JPanel, cd:JFrame) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, me_match_v1_0 (me_match_v1_0.v)]", 1); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, me_match_v1_0 (me_match_v1_0.v), me_match_v1_0_S00_AXI_inst - me_match_v1_0_S00_AXI (me_match_v1_0_S00_AXI.v), bram - sram (me_match_v1_0_S00_AXI.v)]", 3, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, me_match_v1_0 (me_match_v1_0.v), me_match_v1_0_S00_AXI_inst - me_match_v1_0_S00_AXI (me_match_v1_0_S00_AXI.v)]", 2, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, me_match_v1_0 (me_match_v1_0.v), me_match_v1_0_S00_AXI_inst - me_match_v1_0_S00_AXI (me_match_v1_0_S00_AXI.v)]", 2, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceQtoS.SrcMenu_OPEN_SELECTED_SOURCE_FILES, "Open File"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+selectCodeEditor("me_match_v1_0_S00_AXI.v", 528, 244); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - me_match", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // al:k (JViewport:JComponent, cd:JFrame)
+// [GUI Memory]: 78 MB (+154kb) [00:00:54]
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a:JButton (JPanel:JComponent, cd:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 15 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// bt:g (cd:JFrame):  Package IP : addNotify
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_DO_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 591 MB. GUI used memory: 55 MB. Current time: 6/21/17 3:53:27 AM CST
+// Tcl Message: close_project -delete 
+dismissDialog("Package IP"); // bt:g (cd:JFrame)
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// [Engine Memory]: 595 MB (+660kb) [00:00:57]
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/Users/Berlin/Desktop/0620/0620_lab_BRAM/ip_repo/me_match_1.0 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/Berlin/Desktop/0620/0620_lab_BRAM/ip_repo/me_match_1.0' 
+// [GUI Memory]: 86 MB (+3421kb) [00:01:01]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab6_wrapper (lab6_wrapper.v), lab6_i - lab6 (lab6.bd), lab6 (lab6.v), me_match_0 - lab6_me_match_0_0 (lab6_me_match_0_0.xci)]", 4, false, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_REPORT_IP_STATUS, "Report IP Status"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_IP_STATUS
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// bt:g (cd:JFrame):  Report IP Status : addNotify
+// Tcl Message: report_ip_status -name ip_status  
+dismissDialog("Report IP Status"); // bt:g (cd:JFrame)
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a:JButton (JPanel:JComponent, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 628 MB (+3612kb) [00:01:04]
+// bt:g (cd:JFrame):  Upgrade IP : addNotify
+// Tcl Message: upgrade_ip -vlnv xilinx.com:user:me_match:1.0 [get_ips  lab6_me_match_0_0] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'C:/Users/Berlin/Desktop/0620/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd' Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 669 MB (+10211kb) [00:01:07]
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M Adding cell -- xilinx.com:user:me_match:1.0 - me_match_0 Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Successfully read diagram <lab6> from BD file <C:/Users/Berlin/Desktop/0620/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd> 
+// [GUI Memory]: 92 MB (+1842kb) [00:01:08]
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// [GUI Memory]: 97 MB (+962kb) [00:01:08]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-3422] Upgraded lab6_me_match_0_0 (me_match_v1.0 1.0) from revision 14 to revision 15 
+// Tcl Message: Wrote  : <C:/Users/Berlin/Desktop/0620/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd>  
+// Tcl Message: INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Berlin/Desktop/0620/0620_lab_BRAM/0316303_0619/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips lab6_me_match_0_0] -no_script -sync -force -quiet 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// at:q (cd:JFrame): Generate Output Products: addNotify
+selectButton("PAResourceTtoZ.UpgradeIP_IP_UPGRADE_COMPLETED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_CLOSE_DIALOG_UNSAVED_CHANGES_WILL, "Skip"); // a:JButton (JPanel:JComponent, at:q)
+dismissDialog("Generate Output Products"); // at:q (cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 699 MB. GUI used memory: 55 MB. Current time: 6/21/17 3:53:43 AM CST
+selectTab((HResource) null, (HResource) null, "IP Status", 3); // aA:FrameContainer (ContainerContainer:JideSplitPane, cd:JFrame)
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h:k (JPanel:JComponent, cd:JFrame)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// bt:g (cd:JFrame):  Report IP Status : addNotify
+// Tcl Message: report_ip_status -name ip_status  
+dismissDialog("Report IP Status"); // bt:g (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// y:aO (cd:JFrame): Synthesis is Out-of-date: addNotify
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // y:aO (cd:JFrame)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bt:g (cd:JFrame)
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// bt:g (cd:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// [Engine Memory]: 729 MB (+27460kb) [00:01:22]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Verilog Output written to : C:/Users/Berlin/Desktop/0620/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6.v Verilog Output written to : C:/Users/Berlin/Desktop/0620/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6_wrapper.v Wrote  : <C:/Users/Berlin/Desktop/0620/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd>  
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block me_match_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M . INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc . 
+// Tcl Message: Exporting to file C:/Users/Berlin/Desktop/0620/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hw_handoff/lab6.hwh 
+// [Engine Memory]: 812 MB (+49265kb) [00:01:27]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// HMemoryUtils.trashcanNow. Engine heap size: 812 MB. GUI used memory: 54 MB. Current time: 6/21/17 3:53:58 AM CST
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: Generated Block Design Tcl file C:/Users/Berlin/Desktop/0620/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hw_handoff/lab6_bd.tcl Generated Hardware Definition File C:/Users/Berlin/Desktop/0620/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6.hwdef 
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP lab6_auto_pc_0, cache-ID = 83e7b606e4f79014; cache size = 483.879 MB. 
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_NEW
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Jun 21 03:53:59 2017] Launched lab6_me_match_0_0_synth_1, synth_1... Run output will be captured here: lab6_me_match_0_0_synth_1: C:/Users/Berlin/Desktop/0620/0620_lab_BRAM/0316303_0619/0316303_0619.runs/lab6_me_match_0_0_synth_1/runme.log synth_1: C:/Users/Berlin/Desktop/0620/0620_lab_BRAM/0316303_0619/0316303_0619.runs/synth_1/runme.log [Wed Jun 21 03:53:59 2017] Launched impl_1... Run output will be captured here: C:/Users/Berlin/Desktop/0620/0620_lab_BRAM/0316303_0619/0316303_0619.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1028.992 ; gain = 93.656 
+dismissDialog("Generate Bitstream"); // bt:g (cd:JFrame)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking too long to process. Increasing delay to 3000 ms.
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h:k (JPanel:JComponent, cd:JFrame)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h:k (JPanel:JComponent, cd:JFrame)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+selectTab((HResource) null, (HResource) null, "Design Runs", 5); // aA:FrameContainer (ContainerContainer:JideSplitPane, cd:JFrame)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "lab6 ;  ; Running Submodule Runs ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Tue Jun 20 20:42:02 CST 2017 ; 00:00:50 ;  ;  ; ", 3, "lab6", 0, true); // T:ab (JViewport:JComponent, cd:JFrame) - Node
+expandTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "lab6 ;  ; Running Submodule Runs ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Tue Jun 20 20:42:02 CST 2017 ; 00:00:50 ;  ;  ; ", 3); // T:ab (JViewport:JComponent, cd:JFrame)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "lab6_me_match_0_0_synth_1 ; lab6_me_match_0_0 ; Running synth_design... ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Wed Jun 21 03:54:04 CST 2017 ; 00:00:00 ; Vivado Synthesis Defaults (Vivado Synthesis 2016) ; xc7z020clg484-1 ; Vivado Synthesis Defaults", 5, "lab6_me_match_0_0_synth_1", 0, false); // T:ab (JViewport:JComponent, cd:JFrame)
+// PAPropertyPanels.initPanels (lab6_me_match_0_0_synth_1) elapsed time: 0.2s
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "Log", 3); // g:JideTabbedPane (JPanel:JComponent, cd:JFrame)
+selectCodeEditor(PAResourceEtoH.ExpRunPropPanels_MONITOR, 335, 209); // D:bF (J:B, cd:JFrame)
+// Elapsed time: 74 seconds
+selectCodeEditor(PAResourceEtoH.ExpRunPropPanels_MONITOR, 364, 188); // D:bF (J:B, cd:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 860 MB (+7465kb) [00:03:21]
+// HMemoryUtils.trashcanNow. Engine heap size: 860 MB. GUI used memory: 69 MB. Current time: 6/21/17 3:55:53 AM CST
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 103 MB (+882kb) [00:07:03]
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 269 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a:JRadioButton (JPanel:JComponent, ah:y)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:y)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah:y (cd:JFrame)
+// [GUI Memory]: 109 MB (+1219kb) [00:10:29]
+// [GUI Memory]: 116 MB (+1371kb) [00:17:50]
+// HMemoryUtils.trashcanNow. Engine heap size: 860 MB. GUI used memory: 72 MB. Current time: 6/21/17 4:25:53 AM CST
+// [GUI Memory]: 123 MB (+846kb) [00:56:12]
+// HMemoryUtils.trashcanNow. Engine heap size: 860 MB. GUI used memory: 69 MB. Current time: 6/21/17 4:55:53 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 860 MB. GUI used memory: 60 MB. Current time: 6/21/17 5:25:53 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 860 MB. GUI used memory: 60 MB. Current time: 6/21/17 5:55:54 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 860 MB. GUI used memory: 60 MB. Current time: 6/21/17 6:25:54 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 860 MB. GUI used memory: 60 MB. Current time: 6/21/17 6:55:54 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 860 MB. GUI used memory: 60 MB. Current time: 6/21/17 7:25:54 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 860 MB. GUI used memory: 60 MB. Current time: 6/21/17 7:55:55 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 860 MB. GUI used memory: 60 MB. Current time: 6/21/17 8:25:55 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 860 MB. GUI used memory: 60 MB. Current time: 6/21/17 8:55:55 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 860 MB. GUI used memory: 61 MB. Current time: 6/21/17 9:25:55 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 860 MB. GUI used memory: 60 MB. Current time: 6/21/17 9:55:56 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 860 MB. GUI used memory: 60 MB. Current time: 6/21/17 10:25:56 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 860 MB. GUI used memory: 60 MB. Current time: 6/21/17 10:55:56 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 860 MB. GUI used memory: 60 MB. Current time: 6/21/17 11:25:57 AM CST
+// Elapsed time: 27428 seconds
+selectTab((HResource) null, (HResource) null, "Design Runs", 5); // aA:FrameContainer (ContainerContainer:JideSplitPane, cd:JFrame)
+// Elapsed time: 881 seconds
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_IP_CATALOG, "Refresh IP Catalog"); // h:k (JPanel:JComponent, cd:JFrame)
+// TclEventType: CREATE_IP_CATALOG
+// bt:g (cd:JFrame):  Refresh IP Catalog : addNotify
+// Tcl Message: update_ip_catalog -rebuild -scan_changes 
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Berlin/Desktop/0620/0620_lab_BRAM/ip_repo/me_match_1.0'. 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status 
+dismissDialog("Refresh IP Catalog"); // bt:g (cd:JFrame)
+selectTab((HResource) null, (HResource) null, "Board", 3); // aA:FrameContainer (ContainerContainer:JideSplitPane, cd:JFrame)
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aA:FrameContainer (ContainerContainer:JideSplitPane, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab6_wrapper (lab6_wrapper.v), lab6_i - lab6 (lab6.bd), lab6 (lab6.v), me_match_0 - lab6_me_match_0_0 (lab6_me_match_0_0.xci)]", 4, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab6_wrapper (lab6_wrapper.v), lab6_i - lab6 (lab6.bd), lab6 (lab6.v), me_match_0 - lab6_me_match_0_0 (lab6_me_match_0_0.xci)]", 4, false, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k:q (cd:JFrame): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, k:q)
+// bt:g (cd:JFrame):  Edit in IP Packager : addNotify
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name me_match_v1_0_v1_0_project -directory C:/Users/Berlin/Desktop/0620/0620_lab_BRAM/0316303_0619/0316303_0619.tmp/me_match_v1_0_v1_0_project c:/Users/Berlin/Desktop/0620/0620_lab_BRAM/ip_repo/me_match_1.0/component.xml 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'c:/users/berlin/desktop/0620/0620_lab_bram/0316303_0619/0316303_0619.tmp/me_match_v1_0_v1_0_project' 
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2016.4/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Berlin/Desktop/0620/0620_lab_BRAM/ip_repo/me_match_1.0'. INFO: [IP_Flow 19-795] Syncing license key meta-data INFO: [IP_Flow 19-793] Syncing display name meta-data INFO: [IP_Flow 19-798] Syncing taxonomy meta-data 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// [GUI Memory]: 130 MB (+1463kb) [07:59:39]
+// 'i' command handler elapsed time: 4 seconds
+dismissDialog("Edit in IP Packager"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, me_match_v1_0 (me_match_v1_0.v)]", 1); // y:i (D:JPanel, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, me_match_v1_0 (me_match_v1_0.v), me_match_v1_0_S00_AXI_inst - me_match_v1_0_S00_AXI (me_match_v1_0_S00_AXI.v), bram - sram (me_match_v1_0_S00_AXI.v)]", 3, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, me_match_v1_0 (me_match_v1_0.v), me_match_v1_0_S00_AXI_inst - me_match_v1_0_S00_AXI (me_match_v1_0_S00_AXI.v)]", 2, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, me_match_v1_0 (me_match_v1_0.v), me_match_v1_0_S00_AXI_inst - me_match_v1_0_S00_AXI (me_match_v1_0_S00_AXI.v)]", 2, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectMenuItem(PAResourceQtoS.SrcMenu_OPEN_SELECTED_SOURCE_FILES, "Open File"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - me_match", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "me_match_v1_0_S00_AXI.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - me_match", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // al:k (JViewport:JComponent, cd:JFrame)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a:JButton (JPanel:JComponent, cd:JFrame)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 16 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: FILE_SET_CHANGE
+// bt:g (cd:JFrame):  Package IP : addNotify
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_DO_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+// TclEventType: PROJECT_CLOSE
+// [GUI Memory]: 141 MB (+4777kb) [07:59:56]
+// HMemoryUtils.trashcanNow. Engine heap size: 860 MB. GUI used memory: 89 MB. Current time: 6/21/17 11:52:27 AM CST
+// Tcl Message: close_project -delete 
+dismissDialog("Package IP"); // bt:g (cd:JFrame)
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/Users/Berlin/Desktop/0620/0620_lab_BRAM/ip_repo/me_match_1.0 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/Berlin/Desktop/0620/0620_lab_BRAM/ip_repo/me_match_1.0' 
+// TclEventType: CREATE_IP_CATALOG
+selectButton(PAResourceQtoS.SystemTab_SHOW_IP_STATUS, "Show IP Status"); // h:k (JPanel:JComponent, cd:JFrame)
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h:k (JPanel:JComponent, cd:JFrame)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a:JButton (JPanel:JComponent, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// Tcl Message: upgrade_ip -vlnv xilinx.com:user:me_match:1.0 [get_ips  lab6_me_match_0_0] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'C:/Users/Berlin/Desktop/0620/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd' 
+// TclEventType: DG_GRAPH_STALE
+// bt:g (cd:JFrame):  Upgrade IP : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-3422] Upgraded lab6_me_match_0_0 (me_match_v1.0 1.0) from revision 15 to revision 16 
+// Tcl Message: Wrote  : <C:/Users/Berlin/Desktop/0620/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd>  
+// Tcl Message: INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Berlin/Desktop/0620/0620_lab_BRAM/0316303_0619/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips lab6_me_match_0_0] -no_script -sync -force -quiet 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// at:q (cd:JFrame): Generate Output Products: addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton("PAResourceTtoZ.UpgradeIP_IP_UPGRADE_COMPLETED_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_CLOSE_DIALOG_UNSAVED_CHANGES_WILL, "Skip"); // a:JButton (JPanel:JComponent, at:q)
+dismissDialog("Generate Output Products"); // at:q (cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f:q (cd:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:q)
+// y:aO (cd:JFrame): Synthesis is Out-of-date: addNotify
+dismissDialog("Launch Runs"); // f:q (cd:JFrame)
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // y:aO (cd:JFrame)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bt:g (cd:JFrame)
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// bt:g (cd:JFrame):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: Verilog Output written to : C:/Users/Berlin/Desktop/0620/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6.v Verilog Output written to : C:/Users/Berlin/Desktop/0620/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6_wrapper.v Wrote  : <C:/Users/Berlin/Desktop/0620/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd>  
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block me_match_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M . 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc . 
+// Tcl Message: Exporting to file C:/Users/Berlin/Desktop/0620/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hw_handoff/lab6.hwh 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Generated Block Design Tcl file C:/Users/Berlin/Desktop/0620/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hw_handoff/lab6_bd.tcl Generated Hardware Definition File C:/Users/Berlin/Desktop/0620/0620_lab_BRAM/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/hdl/lab6.hwdef 
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP lab6_auto_pc_0, cache-ID = 83e7b606e4f79014; cache size = 498.664 MB. 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_NEW
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Jun 21 11:52:43 2017] Launched lab6_me_match_0_0_synth_1, synth_1... Run output will be captured here: lab6_me_match_0_0_synth_1: C:/Users/Berlin/Desktop/0620/0620_lab_BRAM/0316303_0619/0316303_0619.runs/lab6_me_match_0_0_synth_1/runme.log synth_1: C:/Users/Berlin/Desktop/0620/0620_lab_BRAM/0316303_0619/0316303_0619.runs/synth_1/runme.log [Wed Jun 21 11:52:43 2017] Launched impl_1... Run output will be captured here: C:/Users/Berlin/Desktop/0620/0620_lab_BRAM/0316303_0619/0316303_0619.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bt:g (cd:JFrame)
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h:k (JPanel:JComponent, cd:JFrame)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 207 seconds
+selectTab((HResource) null, (HResource) null, "Design Runs", 5); // aA:FrameContainer (ContainerContainer:JideSplitPane, cd:JFrame)
+expandTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "lab6 ;  ; Submodule Runs Complete ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Tue Jun 20 20:42:02 CST 2017 ; 15:12:10 ;  ;  ; ", 3); // T:ab (JViewport:JComponent, cd:JFrame)
+collapseTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "lab6 ;  ; Submodule Runs Complete ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Tue Jun 20 20:42:02 CST 2017 ; 15:12:10 ;  ;  ; ", 3); // T:ab (JViewport:JComponent, cd:JFrame)
+// [GUI Memory]: 150 MB (+1362kb) [08:05:10]
+// [GUI Memory]: 158 MB (+894kb) [08:05:13]
+// TclEventType: RUN_COMPLETED
+// ah:y (cd:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 144 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:y)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah:y (cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 910 MB. GUI used memory: 87 MB. Current time: 6/21/17 11:58:42 AM CST
+// [Engine Memory]: 910 MB (+7202kb) [08:06:15]

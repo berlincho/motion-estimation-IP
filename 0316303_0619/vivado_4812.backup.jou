@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue Jun 20 21:33:19 2017
+# Process ID: 4812
+# Current directory: C:/Users/shlab_61/Desktop/0620/0620_labfq110/0316303_0619
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2644 C:\Users\shlab_61\Desktop\0620\0620_labfq110\0316303_0619\0316303_0619.xpr
+# Log file: C:/Users/shlab_61/Desktop/0620/0620_labfq110/0316303_0619/vivado.log
+# Journal file: C:/Users/shlab_61/Desktop/0620/0620_labfq110/0316303_0619\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/shlab_61/Desktop/0620/0620_labfq110/0316303_0619/0316303_0619.xpr
+open_bd_design {C:/Users/shlab_61/Desktop/0620/0620_labfq110/0316303_0619/0316303_0619.srcs/sources_1/bd/lab6/lab6.bd}

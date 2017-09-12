@@ -1,0 +1,10 @@
+22:48:17 **** Incremental Build of configuration Debug for project find_motion ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+22:48:24 **** Incremental Build of configuration Debug for project find_motion ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
